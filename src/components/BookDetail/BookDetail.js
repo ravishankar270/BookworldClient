@@ -53,7 +53,7 @@ export function BookDetailContext(props) {
 
     }
     const Item = () => {
-        const a=ismark?"yellow":"black"}
+        const a=ismark?"yellow":"black"
         return (
             <React.Fragment>
                 <div className='shado'>
