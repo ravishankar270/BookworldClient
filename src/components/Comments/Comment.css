@@ -1,0 +1,243 @@
+.thread{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.comments{
+    width: 80%;
+    background-color: white;
+    margin: 20px;
+    margin-bottom: 40px;
+    
+}
+.review{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+}
+.replyreview{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 85%;
+    margin-top: 10px;
+}
+.replyreview img{
+    width: 35px;
+    height: 35px;
+}
+.replycontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+}
+.userinfo{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.userinfo h3{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.userimg{
+    border: none;
+  color: white;
+  padding: 9px 15px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 50%;
+    background-color: #5755d9;
+    font-size: 18px;
+}
+.heading{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+hr{
+    width: 90%;
+}
+
+.replypost{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.inputplace{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+}
+.inputplace img{
+    width: 40px;
+    height: 40px;
+}
+.inputplace input{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+}
+.buttons button{
+    margin: 1px 10px 15px 0px;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    padding: 4px 15px 4px;
+
+}
+
+.userreview{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+.reply{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.replybtn{
+    font-size: 16px;
+    cursor: pointer;
+}
+.likes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+.likes i{
+    cursor: pointer;
+}
+
+.dislikes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+.dislikes i{
+    cursor: pointer;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    z-index: 100;
+}
+.post textarea{
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px   ;
+}
+.post button{
+    width: 25%;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 6px;
+    margin-top: 10px;
+
+}
+.viewreplies{
+    color: #007bff;
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 100%;
+}
+.viewreplies:hover{
+    box-shadow: none;
+}
+.viewreplies i{
+    margin-right: 10px;
+   
+}
+button:hover{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.icons{
+    width: 3%;
+}
+.icons i:hover{
+    opacity: 0.7;
+}
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 22%;
+}
+@media only screen and (max-width: 767px) {
+    .comments{
+        width: 100%;
+        margin: 5px;
+    }
+    .userinfo{
+        width: 100%;
+    }
+    .reply{
+        width: 100%;
+    }
+    .viewreplies{
+        width: 75%;
+    }
+    .icons{
+        width: 5%;
+    }
+    .userdetails{
+     width: 70%;   
+    }
+    .post button{
+        width: fit-content;
+        padding: 3px 15px 3px;
+    }
+    .buttons button{
+        padding: 4px 5px 4px;
+    }
+    .post textarea{
+        width: 85%;
+    }
+    .view{
+        width: 60%;
+    }
+    
+}
+

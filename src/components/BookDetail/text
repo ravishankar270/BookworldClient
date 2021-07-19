@@ -1,0 +1,16 @@
+id
+volumeInfo:{
+    title,
+    subtitle
+    authors:[
+
+    ]
+    publishedDate   
+    description
+    page count
+    categories
+    "averageRating"
+    previewLink
+    infoLink gives book price in playstore
+    
+}

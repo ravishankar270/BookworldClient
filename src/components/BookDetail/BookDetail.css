@@ -1,0 +1,76 @@
+.shado{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+    box-shadow: none;
+}
+.bookDetail{
+    width: 80%;
+    height: fit-content;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+}
+.preview button{
+    background-color: #007bff;
+    border: none;
+    padding: 5px;
+    margin-top: 15px;
+}
+.preview button a{
+    color: white;
+    text-decoration: none;
+}
+.mainpart{
+    width: 70%;
+}
+@media only screen and (max-width: 767px) {
+    .bookDetail{
+        width: 100%;
+        margin: 0px;
+    }
+    h4{
+        font-size: 14px;
+
+    }
+    h3{
+        font-size: 14px;
+    }
+    .mainpart{
+        width: 60%;
+    }
+    .preview{
+        width: 20%;
+    }
+    .preview button a{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .bookDetail{
+        width: 100%;
+        margin: 5px;
+    }
+    h4{
+        font-size: 18px;
+
+    }
+    h3{
+        font-size: 18px;
+    }
+    .preview button a{
+        font-size: 12px;
+    }
+}

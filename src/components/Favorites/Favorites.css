@@ -1,0 +1,79 @@
+.wa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+    
+}
+.bookmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: calc((100vh - 80px)/1.5);
+    background-color: white;
+
+}
+.wantpart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.want{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    
+}
+.book{
+    width: 12%;
+    height: 150px;
+
+}
+.book img{
+    width: 100%;
+    height: 100%;
+}
+.viewBookmark:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.viewBookmark{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding:5px 0px 5px ;
+    margin-top: 3px;
+}
+@media only screen and (max-width: 767px) {
+.bookmark{
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+.book{
+    width: 24%;
+    height: 150px;
+
+}
+.wantpart h3{
+    font-size: 30px;
+}
+}
