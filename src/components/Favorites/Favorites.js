@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import NavBar from '../Nav/Nav'
 import "./Favorites.css"
-import logo from '../../logo.jpg'
 import { BookmarkContext, Bookmark } from '../../Bookmark'
 import Cookies from 'js-cookie'
 import {
@@ -13,7 +12,7 @@ function FavoritesContext() {
 
     const user = Cookies.get("Email")
     const { bookmark, setBookmark } = useContext(BookmarkContext)
-    console.log(bookmark)
+    
 
     return (
         <React.Fragment>
