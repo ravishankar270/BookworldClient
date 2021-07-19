@@ -53,6 +53,7 @@ export function BookDetailContext(props) {
 
     }
     const Item = () => {
+        const a=ismark?"yellow":"black"}
         return (
             <React.Fragment>
                 <div className='shado'>
@@ -87,7 +88,7 @@ export function BookDetailContext(props) {
                                 </React.Fragment>)}
                         </div>
                         {ismark ? <i ref={bookMark} onClick={addBook} style={{ cursor: "pointer", fontSize: "22px",color:"yellow" }} className="fas fa-bookmark"></i> : 
-                        <i ref={bookMark} onClick={addBook} style={{ cursor: "pointer", fontSize: "22px" }} className="fas fa-bookmark"></i>}
+                        <i ref={bookMark} onClick={addBook} style={{ cursor: "pointer", fontSize: "22px",color:{a} }} className="fas fa-bookmark"></i>}
                     </div>
                 </div>
                 <Comment name={item.volumeInfo.title} />
