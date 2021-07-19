@@ -44,7 +44,7 @@ export default function Comment(props) {
     // }
     useEffect(() => {
         if (refresh) {
-            axios.get(`http://localhost:5000/reviews/${props.name}`).then(response => {
+            axios.get(`https://bookah.herokuapp.com/reviews/${props.name}`).then(response => {
                 console.log(response.data)
                 setReviews(response.data)
                 // setYes(true)
@@ -61,7 +61,7 @@ export default function Comment(props) {
     }
 
     const deleteReview = (review_id) => {
-        axios.delete('http://localhost:5000/deleteReviews', {
+        axios.delete('https://bookah.herokuapp.com/deleteReviews', {
             data:
             {
                 id: reviews._id,
@@ -90,7 +90,7 @@ export default function Comment(props) {
             rating: rating,
             replies: []
         }
-        axios.post('http://localhost:5000/insert', {
+        axios.post('https://bookah.herokuapp.com/insert', {
             name: props.name,
             comment: text,
             date: date,

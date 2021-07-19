@@ -14,7 +14,7 @@ export default function ReplyPost(props){
         var date = dd + '/' + mm + '/' + yyyy;
         
         
-        axios.post('http://localhost:5000/insertReplies', {
+        axios.post('https://bookah.herokuapp.com/insertReplies', {
         
             comment: post,
             date: date,

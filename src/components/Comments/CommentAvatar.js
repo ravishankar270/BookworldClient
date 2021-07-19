@@ -57,7 +57,7 @@ export default function CommentAvatar({ item, ratingChanged, deleteReview, id, i
     }
     const edit1 = (id, review_id) => {
         if (edited !== item.comment) {
-            axios.put('http://localhost:5000/editReviews', {
+            axios.put('https://bookah.herokuapp.com/editReviews', {
 
                 edited: edited,
                 id: id,
@@ -89,7 +89,7 @@ export default function CommentAvatar({ item, ratingChanged, deleteReview, id, i
 
     const incLikes=(id,review_id)=>{
         if(activeL){
-            axios.put('http://localhost:5000/incrementLikes', {
+            axios.put('https://bookah.herokuapp.com/incrementLikes', {
 
                 id: id,
                 review_id: review_id,
@@ -107,7 +107,7 @@ export default function CommentAvatar({ item, ratingChanged, deleteReview, id, i
                 // })\\
             }, error => console.log(console.error()))
         }else{
-            axios.put('http://localhost:5000/incrementLikes', {
+            axios.put('https://bookah.herokuapp.com/incrementLikes', {
 
                 id: id,
                 isLike:true,
@@ -130,7 +130,7 @@ export default function CommentAvatar({ item, ratingChanged, deleteReview, id, i
 
     const incDislikes=(id,review_id)=>{
         if(activeD){
-            axios.put('http://localhost:5000/incrementDisLikes', {
+            axios.put('https://bookah.herokuapp.com/incrementDisLikes', {
 
                 id: id,
                 review_id: review_id,
@@ -148,7 +148,7 @@ export default function CommentAvatar({ item, ratingChanged, deleteReview, id, i
                 // })\\
             }, error => console.log(console.error()))
         }else{
-            axios.put('http://localhost:5000/incrementDisLikes', {
+            axios.put('https://bookah.herokuapp.com/incrementDisLikes', {
 
                 id: id,
                 isLike:true,
