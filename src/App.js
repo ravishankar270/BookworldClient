@@ -51,8 +51,8 @@ const Routes = () => {
       <Route path="/login"  exact  component={Login} />
       <Route path="/" exact  component={BookBody} />
       <ProtectedDetail path="/details" exact auth={Auth.auth} id={query.get("id")} component={BookBody} />
+      <Route path="/favorites" exact component={Favorites} />
       <LogoutRoute path="/logout" exact  component={BookBody} />
-      <Route path="/favorites" exact   component={Favorites} />
       <Route path="/profile" exact   component={Profile} />
     </Switch>
   )
