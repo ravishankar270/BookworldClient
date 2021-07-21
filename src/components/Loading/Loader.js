@@ -12,7 +12,7 @@ export default function Loading(props){
       setTimeout(() => {
         seti(false)
         
-      }, 2000);
+      }, 10000);
     }
   },[])
  
