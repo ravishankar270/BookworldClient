@@ -9,7 +9,7 @@ export function Bookmark(props){
     const value={bookmark,setBookmark}
     useEffect(()=>{
         if(user){
-            axios.get(`http://localhost:5000/bookmark/${user}`).then(response=>{
+            axios.get(`https://bookah.herokuapp.com/bookmark/${user}`).then(response=>{
             console.log(response.data)
             setBookmark(response.data.bookmark.bookmark)  
             },error=>{
